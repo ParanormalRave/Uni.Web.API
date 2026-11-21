@@ -15,8 +15,7 @@ public sealed class StudentConfiguration : IEntityTypeConfiguration<Student>
         builder.Property(s => s.LastName).IsRequired().HasMaxLength(20);
         builder.Property(s => s.DateOfBirth).IsRequired();
         builder.Property(s => s.Email).IsRequired().HasMaxLength(70);
-        // onwuegbuchulam.ifesinachukwubia@uniilorin.edu.ng
-        builder.Property(s => s.PhoneNumber).IsRequired().HasMaxLength(11);        
+        builder.Property(s => s.PhoneNumber).IsRequired().HasMaxLength(11);
         builder.Property(s => s.EntrySession).IsRequired().HasMaxLength(9);
         builder.Property(s => s.CurrentLevel).IsRequired();
         builder.Property(s => s.DepartmentId).IsRequired();

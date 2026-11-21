@@ -1,6 +1,22 @@
-@Uni.Web.API_HostAddress = http://localhost:5027
-
-GET {{Uni.Web.API_HostAddress}}/weatherforecast/
+@host = http://localhost:5027
+GET {{host}}/api/students
 Accept: application/json
+
+###
+
+POST {{host}}/api/students
+Content-Type: application/json
+
+{
+  "regNumber": "2020123456",
+  "firstName": "Ada",
+  "lastName": "Obi",
+  "dateOfBirth": "2003-05-14",
+  "email": "ada@example.com",
+  "phoneNumber": "08012345678",
+  "entrySession": "2023/2024",
+  "currentLevel": 200,
+  "departmentId": "06c7e17b-e082-4280-a68e-61f57385f2de"
+}
 
 ###
